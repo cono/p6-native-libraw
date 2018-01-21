@@ -3,4 +3,14 @@ language: perl6
 perl6:
     - latest
     - '2017.12'
+install:
+    - apt update
+    - apt install -y g++ wget make
+    - wget https://www.libraw.org/data/LibRaw-0.18.7.tar.gz
+    - tar -xzf LibRaw-0.18.7.tar.gz
+    - pushd
+    - cd LibRaw-0.18.7
+    - ./configure
+    - make install
+    - popd
 ...
