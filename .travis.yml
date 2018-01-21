@@ -8,9 +8,8 @@ install:
     - sudo apt install -y g++ wget make
     - wget https://www.libraw.org/data/LibRaw-0.18.7.tar.gz
     - tar -xzf LibRaw-0.18.7.tar.gz
-    - pushd
     - cd LibRaw-0.18.7
     - ./configure
     - sudo make install
-    - popd
+    - cd ..
 ...
